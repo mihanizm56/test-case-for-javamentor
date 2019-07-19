@@ -3,6 +3,6 @@ import ButtonMaterial from "@material-ui/core/Button";
 
 export const Button = memo(({ handleClick }) => (
   <ButtonMaterial onClick={handleClick} to="/profile">
-    Профиль
+    Выбрать
   </ButtonMaterial>
 ));

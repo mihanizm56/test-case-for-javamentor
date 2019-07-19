@@ -3,7 +3,7 @@ import createSagaMiddleware from "redux-saga";
 import rootSaga from "./root-saga.js";
 import { rootReducer } from "./root-reducer";
 
-export const createAppStore = savedState => {
+export const createAppStore = () => {
   const sagaMiddleware = createSagaMiddleware();
 
   const store = createStore(
@@ -15,6 +15,6 @@ export const createAppStore = savedState => {
     )
   );
 
-  sagaMiddleware.run(rootSaga);
+  // sagaMiddleware.run(rootSaga);
   return store;
 };

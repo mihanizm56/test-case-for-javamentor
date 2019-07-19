@@ -12,3 +12,5 @@ export const LangList = memo(({ listData }) =>
     />
   ))
 );
+
+LangList.defaultProps = { listData: [] };

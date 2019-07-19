@@ -7,7 +7,9 @@ export const SearcherView = memo(
       <div className="searcher-container">
         <Select handleChange={handleSearchChange}>
           {options.map((option, index) => (
-            <option value={option.value} key={index} />
+            <option value={option.value} key={index}>
+              {option.value}
+            </option>
           ))}
         </Select>
         <Button handleClick={handleSearchClick} />

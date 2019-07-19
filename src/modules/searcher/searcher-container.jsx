@@ -1,15 +1,19 @@
-import React from "react";
+import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchLangData, getLangData } from "../../redux/modules/lang-data";
 import { listOptions as options } from "./constants";
 
-class WrappedContainer {
+class WrappedContainer extends Component {
+  state = {
+    selectedField: null
+  };
+
   handleSearchClick = () => {
     console.log("check handleSearchClick, should start ");
   };
 
-  handleSearchChange = () => {
-    console.log("check handleSearchChange");
+  handleSearchChange = ({ target: { value } }) => {
+    console.log("check handleSearchChange", value);
   };
 
   render = () => {
@@ -24,15 +28,7 @@ class WrappedContainer {
   };
 }
 
-// const mapStateToProps = {
-
-// }
-
-// const mapDispatchToProps = {
-//   fetchLangDataAction:
-// }
-
 export const SearcherContainer = connect(
-  { getLangData },
+  state => ({ getLangData: getLangData(state) }),
   { fetchLangData }
 )(WrappedContainer);
