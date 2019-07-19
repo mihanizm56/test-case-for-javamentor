@@ -1,10 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
 import { fetchLangData, getLangData } from "../../redux/modules/lang-data";
+import { listOptions as options } from "./constants";
 
-class Container {
+class WrappedContainer {
   handleSearchClick = () => {
-    console.log("check handleSearchClick");
+    console.log("check handleSearchClick, should start ");
   };
 
   handleSearchChange = () => {
@@ -17,7 +18,8 @@ class Container {
     return children({
       handleSearchClick: this.handleSearchClick,
       handleSearchChange: this.handleSearchChange,
-      listDatalistData
+      listData,
+      options
     });
   };
 }

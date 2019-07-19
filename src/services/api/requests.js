@@ -5,7 +5,6 @@ export const fetchLangRequest = langParam => {
   console.log("fetchLoginRequest goes");
 
   return getRequest({
-    endpoint: `${getLangEndpoint}?group=${langParam}`,
-    data: { login, password, user }
+    endpoint: `${getLangEndpoint}?group=${langParam}`
   });
 };

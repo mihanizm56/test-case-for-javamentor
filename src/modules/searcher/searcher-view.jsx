@@ -2,7 +2,7 @@ import React, { memo } from "react";
 import { Button, Select, LangList } from "../../components";
 
 export const SearcherView = memo(
-  ({ handleSearchClick, handleSearchChange, listData }) => (
+  ({ handleSearchClick, handleSearchChange, listData, options }) => (
     <div className="searcher-wrapper">
       <div className="searcher-container">
         <Select handleChange={handleSearchChange}>

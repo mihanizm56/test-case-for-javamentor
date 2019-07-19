@@ -1,5 +1,6 @@
 import React, { memo } from "react";
-import "./lang-card.css";
+import { LangCard } from "../lang-card";
+import "./lang-list.css";
 
 export const LangList = memo(({ listData }) =>
   listData.map(({ title, createdAt, numberOfProjects, link }) => (

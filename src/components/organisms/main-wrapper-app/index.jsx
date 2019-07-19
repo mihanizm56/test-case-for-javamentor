@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { Searcher } from "../../../modules/searcher";
-import "./App.css";
+import "./main-wrapper.css";
 
 export const MainWrapper = memo(() => {
   return (
