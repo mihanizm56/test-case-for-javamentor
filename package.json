@@ -25,6 +25,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "lint": "node_modules/.bin/eslint src/",
     "build": "react-scripts build",
     "test": "set CI=true&& npm run test:all",
     "test:coverage": "react-scripts test --coverage",
