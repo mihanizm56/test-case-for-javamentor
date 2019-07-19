@@ -22,6 +22,14 @@ class Container {
   };
 }
 
+// const mapStateToProps = {
+
+// }
+
+// const mapDispatchToProps = {
+//   fetchLangDataAction:
+// }
+
 export const SearcherContainer = connect(
   { getLangData },
   { fetchLangData }
