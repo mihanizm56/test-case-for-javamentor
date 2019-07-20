@@ -1,11 +1,13 @@
 import React, { memo } from "react";
-import { MainWrapper } from "../..";
+import { Searcher } from "../../../modules/searcher";
 import "./App.css";
 
 export const MainWrapper = memo(() => {
   return (
     <div className="global-wrapper">
-      <div className="main-wrapper">{/*Здесь модуль*/}</div>
+      <div className="main-wrapper">
+        <Searcher />
+      </div>
     </div>
   );
 });
