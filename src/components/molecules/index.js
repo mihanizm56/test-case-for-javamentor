@@ -1,2 +1,2 @@
-export * from "./boxes";
-export * from "./forms";
+export * from "./lang-card";
+export * from "./lang-list";

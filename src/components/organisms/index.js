@@ -1,2 +1,1 @@
-export * from "./global-package";
-export * from "./pages";
+export * from "./main-wrapper-app";

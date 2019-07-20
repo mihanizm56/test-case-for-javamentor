@@ -1,6 +1,6 @@
 import React from "react";
-import Select from "@material-ui/core/Select";
+import SelectMaterial from "@material-ui/core/Select";
 
-export const renderSelect = ({ input, label, meta: { touched, error }, children, ...custom }) => (
-	<Select fullWidth={true} {...input} children={children} {...custom} />
-);
+export const Select = memo(({ handleChange, value }) => (
+  <SelectMaterial fullWidth={true} value={value} children={children} />
+));
