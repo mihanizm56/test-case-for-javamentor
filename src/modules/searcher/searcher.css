@@ -1,21 +1,23 @@
-.searcher-wrapper{
+.searcher-wrapper {
     align-self: center;
-    border: 1px solid violet;
     width: 400px;
     overflow: hidden;
+    background-color: #fff;
+    padding: 10px 0;
 }
-.searcher-container{
+
+.searcher-container {
     display: flex;
     justify-content: space-around;
-    border: 1px solid black;
+    padding: 10px;
+    width: 280px;
 }
 
 .searcher__select {
-    width: 250px;
+    width: 135px;
     height: 100%;
 }
 
-.searcher_option{
+.searcher_option {
     width: 50px;
-    border: 1px solid red;
 }
