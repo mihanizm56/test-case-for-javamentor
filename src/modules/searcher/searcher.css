@@ -1,0 +1,22 @@
+.searcher-wrapper{
+    align-self: center;
+    border: 1px solid violet;
+    height: 80vh;
+    width: 400px;
+}
+.searcher-container{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+.searcher-list{}
+
+.searcher__select {
+    width: 250px;
+    height: 100%;
+}
+
+.searcher_option{
+    width: 50px;
+    border: 1px solid red;
+}

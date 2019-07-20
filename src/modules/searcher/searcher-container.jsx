@@ -1,34 +1,37 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { fetchLangData, getLangData } from "../../redux/modules/lang-data";
-import { listOptions as options } from "./constants";
+import React from 'react'
+import { connect } from 'react-redux'
+import { fetchLangData, getLangData } from '../../redux/modules/lang-data'
+import { listOptions as options } from './constants'
 
-class WrappedContainer extends Component {
+class WrappedContainer extends React.Component {
   state = {
-    selectedField: null
+      selectedValue: null
   };
 
   handleSearchClick = () => {
-    console.log("check handleSearchClick, should start ");
+      console.log('check handleSearchClick, should start ')
   };
 
   handleSearchChange = ({ target: { value } }) => {
-    console.log("check handleSearchChange", value);
+      this.setState({selectedValue: value})
+      console.log('check handleSearchChange', value)
   };
 
   render = () => {
-    const { listData, children } = this.props;
+      const {selectedValue} = this.state
+      const { listData, children } = this.props
 
-    return children({
-      handleSearchClick: this.handleSearchClick,
-      handleSearchChange: this.handleSearchChange,
-      listData,
-      options
-    });
+      return children({
+          handleSearchClick: this.handleSearchClick,
+          handleSearchChange: this.handleSearchChange,
+          selectedValue,
+          listData,
+          options
+      })
   };
 }
 
 export const SearcherContainer = connect(
-  state => ({ getLangData: getLangData(state) }),
-  { fetchLangData }
-)(WrappedContainer);
+    state => ({ getLangData: getLangData(state) }),
+    { fetchLangData }
+)(WrappedContainer)

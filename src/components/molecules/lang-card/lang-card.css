@@ -1,0 +1,28 @@
+.card-container {
+    margin-top: 10px;
+    border: 1px solid green;
+    height: 120px;
+    display: flex;
+    padding: 10px;
+}
+
+.card-first-line {
+    border: 1px solid red;
+    height: 118px;
+    width: 118px;
+}
+
+.card-second-line {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:0 0 20px 10px;
+}
+
+.card__lang-name,
+.card__created,
+.card__number-of-projects,
+.card__link{
+    font-family: 'Verdana',"Arial",'sans-serif';
+}

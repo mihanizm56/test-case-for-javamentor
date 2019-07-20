@@ -1,31 +1,6 @@
 {
-    "extends": [
-        "airbnb",
-        "plugin:flowtype/recommended"
-    ],
     "parser": "babel-eslint",
-    "parserOptions": {
-        "ecmaVersion": 7,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "classes": true
-        }
-    },
-    "plugins": [
-        "flowtype",
-        "import",
-        "notice"
-    ],
-    "env": {
-        "browser": true,
-        "node": true,
-        "jest": true
-    },
-    "globals": {
-        "DEBUG": false,
-        "TEST": false,
-        "VERSION": false
-    },
+    "extends": ["standard", "standard-react"],
     "rules": {
         "function-paren-newline": [
             "error",
@@ -49,15 +24,6 @@
         "comma-dangle": [
             "error",
             "never"
-        ],
-        "class-methods-use-this": [
-            "warn",
-            {
-                "exceptMethods": [
-                    "render",
-                    "shouldComponentUpdate"
-                ]
-            }
         ],
         "max-len": [
             "error",
