@@ -16,7 +16,6 @@ type SearcherContainerPropsType = {
 type SearcherContainerStateType = {
     selectedValue:string
 }
-
 class WrappedContainer extends React.Component<SearcherContainerPropsType,SearcherContainerStateType> {
   state = {
       selectedValue: ''

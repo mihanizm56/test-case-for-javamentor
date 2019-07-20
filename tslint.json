@@ -1,6 +1,6 @@
 {
     "parser": "babel-eslint",
-    "extends": ["standard", "standard-react"],
+    "extends": ["tslint:latest", "tslint-react"],
     "env": {
         "browser": true,
         "node": true,
