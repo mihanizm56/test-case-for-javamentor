@@ -1,14 +1,11 @@
 import {
-  FRONTEND,
-  BACKEND,
-  MOBILE,
-  FRONTEND_PARAM,
-  BACKEND_PARAM,
-  MOBILE_PARAM
-} from "../../constants";
+    FRONTEND,
+    BACKEND,
+    MOBILE
+} from '../../constants'
 
 export const listOptions = [
-  { value: FRONTEND },
-  { value: BACKEND },
-  { value: MOBILE }
-];
+    { value: FRONTEND },
+    { value: BACKEND },
+    { value: MOBILE }
+]

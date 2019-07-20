@@ -1,6 +1,11 @@
 {
     "parser": "babel-eslint",
     "extends": ["standard", "standard-react"],
+    "env": {
+        "browser": true,
+        "node": true,
+        "jest": true
+    },
     "rules": {
         "function-paren-newline": [
             "error",
@@ -13,6 +18,7 @@
                 "SwitchCase": 1
             }
         ],
+        "import/export": 0,
         "import/prefer-default-export": "off",
         "import/no-extraneous-dependencies": "off",
         "jsx-a11y/label-has-for": "off",
