@@ -1,5 +1,5 @@
 import React, { memo } from 'react'
-import ButtonMaterial from '@material-ui/core/Button'
+import ButtonMaterial, { ButtonProps as ButtonPropsMaterial } from '@material-ui/core/Button'
 import { withStyles } from '@material-ui/core/styles'
 
 const BootstrapButton = withStyles({
@@ -40,8 +40,12 @@ const BootstrapButton = withStyles({
     }
 })(ButtonMaterial)
 
-export const Button = memo(({ handleClick }) => (
-    <BootstrapButton className='bootstrap-button' onClick={handleClick} to='/profile'>
+interface ButtonProps extends ButtonPropsMaterial {
+    handleClick:()=>void
+}
+
+export const Button = memo<ButtonProps>(({ handleClick }) => (
+    <BootstrapButton className='bootstrap-button' onClick={handleClick}>
       Загрузить
     </BootstrapButton>
 ))

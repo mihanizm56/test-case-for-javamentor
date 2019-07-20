@@ -1,12 +1,17 @@
-import React from 'react'
+import React, {memo} from 'react'
 import './lang-card.css'
 
-export const LangCard = ({
-    title, createdAt, numberOfProjects, link, logo
-}) => {
-    console.log('check LangCard', title, createdAt, numberOfProjects, link, logo)
+interface LangCardType {
+    title:string, 
+    createdAt:number, 
+    numberOfProjects:number, 
+    link:string, 
+    logo:string
+}
 
-    return (
+export const LangCard = memo<LangCardType>(({
+    title, createdAt, numberOfProjects, link, logo
+}) => (
         <div className='card-container'>
             <div className='card-first-line'>
                 <img alt='logo' src={logo} height='118px' width='118px' />
@@ -25,6 +30,4 @@ export const LangCard = ({
             </div>
         </div>
     )
-}
-
-LangCard.defaultProps = {}
+)

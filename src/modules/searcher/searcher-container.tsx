@@ -1,9 +1,23 @@
-import React, {Component} from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
 import { fetchLangData, getLangData } from '../../redux/modules/lang-data'
 import { listOptions as options } from './constants'
+import {SearcherViewProps, handleSearchChangeParams} from './types'
+import {LangCardType} from '../../components/molecules'
 
-class WrappedContainer extends Component {
+
+
+type SearcherContainerPropsType = {
+    fetchLangData:(value:string)=>void,
+    langData:Array<LangCardType>,
+    children:(object: SearcherViewProps)=>Array<React.ReactNode>
+}
+
+type SearcherContainerStateType = {
+    selectedValue:string
+}
+
+class WrappedContainer extends React.Component<SearcherContainerPropsType,SearcherContainerStateType> {
   state = {
       selectedValue: ''
   };
@@ -18,7 +32,7 @@ class WrappedContainer extends Component {
       this.props.fetchLangData(selectedValue)
   };
 
-  handleSearchChange = ({ target: { value } }) => {
+  handleSearchChange = ({ target: { value } }:handleSearchChangeParams) => {
       this.setState({selectedValue: value})
       console.log('check handleSearchChange', value)
   };
@@ -37,7 +51,7 @@ class WrappedContainer extends Component {
   };
 }
 
-export const SearcherContainer = connect(
+export const SearcherContainer:any = connect(
     getLangData,
     { fetchLangData }
 )(WrappedContainer)

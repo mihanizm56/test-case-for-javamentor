@@ -1,10 +1,18 @@
 import React, { memo } from "react";
-import SelectMaterial from "@material-ui/core/Select";
+import SelectMaterial,{SelectProps as SelectPropsMaterial} from "@material-ui/core/Select";
 import icon from "../../../assets/icons/scroll-icon.svg";
 
-export const Select = memo(
-  ({ handleChange, selectedValue, children }) =>
-    console.log("Select icon", icon) || (
+
+
+interface SelectProps extends SelectPropsMaterial {
+  handleChange:(params: any)=>void, 
+  selectedValue:string, 
+  children?:Array<React.ReactNode>
+}
+
+export const Select = memo<SelectProps>(
+  ({ handleChange, selectedValue='', children }) =>
+    (
       <SelectMaterial
         fullWidth
         value={selectedValue}
@@ -21,5 +29,3 @@ export const Select = memo(
       />
     )
 );
-
-Select.defaultProps = { selectedValue: "" };
