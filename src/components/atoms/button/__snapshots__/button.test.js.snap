@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test FooterView test render contract renders inside html-content 1`] = `
+<Button
+  className="bootstrap-button"
+  classes={
+    Object {
+      "colorInherit": "MuiButton-colorInherit-23",
+      "contained": "MuiButton-contained-13",
+      "containedPrimary": "MuiButton-containedPrimary-14",
+      "containedSecondary": "MuiButton-containedSecondary-15",
+      "disabled": "MuiButton-disabled-22",
+      "extendedFab": "MuiButton-extendedFab-20",
+      "fab": "MuiButton-fab-19",
+      "flat": "MuiButton-flat-7",
+      "flatPrimary": "MuiButton-flatPrimary-8",
+      "flatSecondary": "MuiButton-flatSecondary-9",
+      "focusVisible": "MuiButton-focusVisible-21",
+      "fullWidth": "MuiButton-fullWidth-27",
+      "label": "MuiButton-label-3",
+      "mini": "MuiButton-mini-24",
+      "outlined": "MuiButton-outlined-10",
+      "outlinedPrimary": "MuiButton-outlinedPrimary-11",
+      "outlinedSecondary": "MuiButton-outlinedSecondary-12",
+      "raised": "MuiButton-raised-16",
+      "raisedPrimary": "MuiButton-raisedPrimary-17",
+      "raisedSecondary": "MuiButton-raisedSecondary-18",
+      "root": "MuiButton-root-2 WithStyles-Button--root-1",
+      "sizeLarge": "MuiButton-sizeLarge-26",
+      "sizeSmall": "MuiButton-sizeSmall-25",
+      "text": "MuiButton-text-4",
+      "textPrimary": "MuiButton-textPrimary-5",
+      "textSecondary": "MuiButton-textSecondary-6",
+    }
+  }
+  color="default"
+  component="button"
+  disableFocusRipple={false}
+  disabled={false}
+  fullWidth={false}
+  mini={false}
+  onClick={[MockFunction]}
+  size="medium"
+  type="button"
+  variant="text"
+>
+  Загрузить
+</Button>
+`;
