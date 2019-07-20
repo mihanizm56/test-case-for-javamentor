@@ -1,5 +1,14 @@
-const FRONTEND = 'frontend'
-const BACKEND = 'backend'
-const MOBILE = 'mobile'
+import {
+  FRONTEND,
+  BACKEND,
+  MOBILE,
+  FRONTEND_PARAM,
+  BACKEND_PARAM,
+  MOBILE_PARAM
+} from "../../constants";
 
-export const listOptions = [{ value: FRONTEND }, { value: BACKEND }, { value: MOBILE }]
+export const listOptions = [
+  { value: FRONTEND },
+  { value: BACKEND },
+  { value: MOBILE }
+];
