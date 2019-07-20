@@ -3,7 +3,7 @@ import MenuItem from '@material-ui/core/MenuItem'
 import { Button, Select, LangList } from '../../components'
 
 export const SearcherView = memo(
-    ({ handleSearchClick, handleSearchChange, listData, options, selectedValue }) => (
+    ({ handleSearchClick, handleSearchChange, langData, options, selectedValue }) => (
         <div className='searcher-wrapper'>
             <div className='searcher-container'>
                 <div className='searcher__select'>
@@ -17,9 +17,7 @@ export const SearcherView = memo(
                 </div>
                 <Button handleClick={handleSearchClick} />
             </div>
-            <div className='searcher-list'>
-                <LangList listData={listData} />
-            </div>
+            <LangList langData={langData} />
         </div>
     )
 )

@@ -1,7 +1,7 @@
 import React, { memo } from 'react'
 import SelectMaterial from '@material-ui/core/Select'
 
-export const Select = memo(({ handleChange, selectedValue, children }) => (
+export const Select = memo(({ handleChange, selectedValue, children }) => console.log('Select selectedValue', selectedValue) || (
     <SelectMaterial
         fullWidth
         value={selectedValue}

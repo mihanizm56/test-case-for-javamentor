@@ -6,12 +6,12 @@ const initialState = {
     langData: []
 }
 
-const allRoutesLens = lensPath(['langData'])
+const langDataLens = lensPath(['langData'])
 
 const langDataStorage = (state = initialState, action) => {
     switch (action.type) {
         case PUT_LANG_DATA:
-            return set(allRoutesLens, action.payload.data, state)
+            return set(langDataLens, action.payload, state)
 
         default:
             return state

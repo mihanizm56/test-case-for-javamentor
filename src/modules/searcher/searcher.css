@@ -1,15 +1,14 @@
 .searcher-wrapper{
     align-self: center;
     border: 1px solid violet;
-    height: 80vh;
     width: 400px;
+    overflow: hidden;
 }
 .searcher-container{
     display: flex;
     justify-content: space-around;
     border: 1px solid black;
 }
-.searcher-list{}
 
 .searcher__select {
     width: 250px;

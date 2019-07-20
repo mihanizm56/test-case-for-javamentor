@@ -1,0 +1,5 @@
+.list-container {
+    border: 1px solid yellow;
+    max-height: 80vh;
+    overflow-y: scroll;
+}

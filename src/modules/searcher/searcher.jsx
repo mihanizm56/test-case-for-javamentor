@@ -5,11 +5,11 @@ import './searcher.css'
 
 export const Searcher = memo(() => (
     <SearcherContainer>
-        {({ handleSearchClick, handleSearchChange, listData, options, selectedValue }) => (
+        {({ handleSearchClick, handleSearchChange, langData, options, selectedValue }) => (
             <SearcherView
                 handleSearchClick={handleSearchClick}
                 handleSearchChange={handleSearchChange}
-                listData={listData}
+                langData={langData}
                 options={options}
                 selectedValue={selectedValue}
             />
