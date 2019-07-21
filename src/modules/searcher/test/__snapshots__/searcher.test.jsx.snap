@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test 1`] = `
+<Memo()
+  handleSearchChange={[MockFunction]}
+  handleSearchClick={[MockFunction]}
+  langData={Array []}
+  options={Object {}}
+  selectedValue="test"
+/>
+`;
+
+exports[`the whole test Searcher by snapshot  1`] = `
+<Memo()
+  handleSearchChange={[MockFunction]}
+  handleSearchClick={[MockFunction]}
+  langData={Array []}
+  options={Object {}}
+  selectedValue="test"
+/>
+`;
