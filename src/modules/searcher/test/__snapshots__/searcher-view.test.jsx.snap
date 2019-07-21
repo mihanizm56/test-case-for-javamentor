@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `undefined`;
+
+exports[`test Button test SearcherView test whole render with props 1`] = `
+<div
+  className="searcher-wrapper"
+>
+  <div
+    className="searcher-container"
+  >
+    <div
+      className="searcher__select"
+    >
+      <Memo()
+        handleChange={[MockFunction]}
+        selectedValue="test_value"
+      >
+        <WithStyles(MenuItem)
+          className="searcher_option"
+          key="0"
+          value="test-option"
+        >
+          test-option
+        </WithStyles(MenuItem)>
+      </Memo()>
+    </div>
+    <Memo()
+      handleClick={[MockFunction]}
+    />
+  </div>
+  <Memo()
+    langData={
+      Array [
+        Object {
+          "createdAt": 1,
+          "link": "test_link",
+          "logo": "test_logo",
+          "numberOfProjects": 1,
+          "title": "test_title",
+        },
+      ]
+    }
+  />
+</div>
+`;
+
+exports[`test Button test render contract test render contract 1`] = `
+<div
+  className="searcher-wrapper"
+>
+  <div
+    className="searcher-container"
+  >
+    <div
+      className="searcher__select"
+    >
+      <Memo()
+        handleChange={[MockFunction]}
+        selectedValue="test_value"
+      >
+        <WithStyles(MenuItem)
+          className="searcher_option"
+          key="0"
+          value="test-option"
+        >
+          test-option
+        </WithStyles(MenuItem)>
+      </Memo()>
+    </div>
+    <Memo()
+      handleClick={[MockFunction]}
+    />
+  </div>
+  <Memo()
+    langData={
+      Array [
+        Object {
+          "createdAt": 1,
+          "link": "test_link",
+          "logo": "test_logo",
+          "numberOfProjects": 1,
+          "title": "test_title",
+        },
+      ]
+    }
+  />
+</div>
+`;
+
+exports[`test SearcherView test SearcherView test whole render with props 1`] = `
+<div
+  className="searcher-wrapper"
+>
+  <div
+    className="searcher-container"
+  >
+    <div
+      className="searcher__select"
+    >
+      <Memo()
+        handleChange={[MockFunction]}
+        selectedValue="test_value"
+      >
+        <WithStyles(MenuItem)
+          className="searcher_option"
+          key="0"
+          value="test-option"
+        >
+          test-option
+        </WithStyles(MenuItem)>
+      </Memo()>
+    </div>
+    <Memo()
+      handleClick={[MockFunction]}
+    />
+  </div>
+  <Memo()
+    langData={
+      Array [
+        Object {
+          "createdAt": 1,
+          "link": "test_link",
+          "logo": "test_logo",
+          "numberOfProjects": 1,
+          "title": "test_title",
+        },
+      ]
+    }
+  />
+</div>
+`;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test MainWrapper test render contract renders Searcher 1`] = `
+<div
+  className="global-wrapper"
+>
+  <div
+    className="main-wrapper"
+  >
+    <Memo() />
+  </div>
+</div>
+`;

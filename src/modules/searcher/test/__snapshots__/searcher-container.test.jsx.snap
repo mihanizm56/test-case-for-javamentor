@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SearcherContainer test setting props to a component test set handleSearchChange prop  1`] = `
+<p
+  className="test-prop"
+  handleSearchChange={[Function]}
+  handleSearchClick={[Function]}
+  langData={Array []}
+  options={
+    Array [
+      Object {
+        "value": "Front-end",
+      },
+      Object {
+        "value": "Back-end",
+      },
+      Object {
+        "value": "Mobile",
+      },
+    ]
+  }
+  selectedValue=""
+/>
+`;
