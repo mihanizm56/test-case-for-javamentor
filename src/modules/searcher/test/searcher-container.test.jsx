@@ -6,7 +6,7 @@ import { createAppStore } from "../../../redux/store";
 import { fetchLangData } from "../../../redux/modules/lang-data/actions";
 
 jest.mock("../../../redux/modules/lang-data/actions", () => ({
-  fetchLangData: jest.fn()
+  fetchLangData: jest.fn().mockReturnValue({ type: "test_action" })
 }));
 
 describe("test SearcherContainer", () => {
@@ -91,7 +91,7 @@ describe("test SearcherContainer", () => {
         .find(".test-prop")
         .prop("handleSearchClick")();
 
-      expect(fetchLangData).toHaveBeenCalledWith();
+      expect(fetchLangData).toHaveBeenCalledTimes(1);
     });
   });
 });

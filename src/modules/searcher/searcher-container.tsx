@@ -22,28 +22,19 @@ class WrappedContainer extends React.Component<
     selectedValue: ""
   };
 
-  componentDidUpdate() {
-    console.log("SearcherContainer props", this.props);
-  }
+  handleSearchClick = () => this.props.fetchLangData(this.state.selectedValue);
 
-  handleSearchClick = () => {
-    const { selectedValue } = this.state;
-    console.log("check handleSearchClick, should start ");
-    this.props.fetchLangData(selectedValue);
-  };
-
-  handleSearchChange = ({ target: { value } }: handleSearchChangeParams) => {
+  handleSearchChange = ({ target: { value } }: handleSearchChangeParams) =>
     this.setState({ selectedValue: value });
-    console.log("check handleSearchChange", value);
-  };
 
   render = () => {
     const { selectedValue } = this.state;
     const { langData, children } = this.props;
+    const { handleSearchClick, handleSearchChange } = this;
 
     return children({
-      handleSearchClick: this.handleSearchClick,
-      handleSearchChange: this.handleSearchChange,
+      handleSearchClick,
+      handleSearchChange,
       selectedValue,
       langData,
       options
