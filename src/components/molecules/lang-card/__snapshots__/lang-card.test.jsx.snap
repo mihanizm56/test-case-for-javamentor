@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test LangCard test render contract renders html-content 1`] = `
+<div
+  className="card-container"
+>
+  <div
+    className="card-first-line"
+  >
+    <img
+      alt="logo"
+      height="118px"
+      src="test_logo"
+      width="118px"
+    />
+  </div>
+  <div
+    className="card-second-line"
+  >
+    <span
+      className="card__lang-name"
+    >
+      test_title
+    </span>
+    <span
+      className="card__created"
+    >
+      Основан в 1 году
+    </span>
+    <span
+      className="card__number-of-projects"
+    >
+      Проектов на GitHub 1
+    </span>
+    <a
+      className="card__link"
+      href="test_link"
+    >
+      Документация
+    </a>
+  </div>
+</div>
+`;

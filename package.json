@@ -26,9 +26,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "lint": "node_modules/.bin/tslint -h",
+    "lint": "node_modules/.bin/tslint .",
     "build": "react-scripts build",
-    "test:all": "set CI=true&& npm run test",
+    "test:precommit": "set CI=true&& npm run test",
     "test:coverage": "react-scripts test --coverage",
     "precommit": "lint-staged",
     "flow": "flow",
@@ -88,7 +88,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test && npm run lint"
+      "pre-commit": "npm run test:precommit && npm run lint"
     }
   },
   "main": "index.js",

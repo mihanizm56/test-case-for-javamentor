@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Select test render contract renders html-content 1`] = `
+<Select
+  IconComponent={[Function]}
+  autoWidth={false}
+  classes={
+    Object {
+      "disabled": "MuiSelect-disabled-6",
+      "filled": "MuiSelect-filled-3",
+      "icon": "MuiSelect-icon-7",
+      "outlined": "MuiSelect-outlined-4",
+      "root": "MuiSelect-root-1",
+      "select": "MuiSelect-select-2",
+      "selectMenu": "MuiSelect-selectMenu-5",
+    }
+  }
+  disableUnderline={true}
+  displayEmpty={false}
+  fullWidth={true}
+  input={<WithStyles(Input) />}
+  multiple={false}
+  native={false}
+  onChange={[MockFunction]}
+  style={
+    Object {
+      "border": "1px solid blue",
+      "borderRadius": "10px",
+      "height": "40px",
+      "padding": "0 5px 0 10px",
+    }
+  }
+  value="test"
+  variant="outlined"
+/>
+`;

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test LangList test render contract renders html-content 1`] = `
+<div
+  className="list-container"
+>
+  <Memo()
+    createdAt={1}
+    key="0"
+    link="test_docs"
+    logo="test_logo"
+    numberOfProjects={1}
+    title="test_name"
+  />
+  <Memo()
+    createdAt={1}
+    key="1"
+    link="test_docs"
+    logo="test_logo"
+    numberOfProjects={1}
+    title="test_name"
+  />
+  <Memo()
+    createdAt={1}
+    key="2"
+    link="test_docs"
+    logo="test_logo"
+    numberOfProjects={1}
+    title="test_name"
+  />
+</div>
+`;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test FooterView test render contract renders inside html-content 1`] = `
+exports[`test Button test render contract renders html-content 1`] = `
 <Button
   className="bootstrap-button"
   classes={
