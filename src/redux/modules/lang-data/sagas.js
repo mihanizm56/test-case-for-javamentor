@@ -5,7 +5,6 @@ import { putLangData } from "./actions";
 export function* fetchLangDataSaga(action) {
   try {
     const data = yield call(fetchLangRequest, action.payload);
-    console.log("fetchLangDataSaga result ", data);
 
     yield put(putLangData(data));
   } catch (error) {

@@ -1,19 +1,19 @@
-import {LangCardType} from '../../components/molecules'
+import { LangCardType } from "../../components/molecules";
 
 export interface OptionsType {
-    [value: string]: string
+  [value: string]: string;
 }
 
-export type handleSearchChangeParams = {
-    target:{
-        value:string
-    }
+export interface HandleSearchChangeParams {
+  target: {
+    value: string;
+  };
 }
 
-export type SearcherViewProps = {
-    handleSearchClick:()=>void, 
-    handleSearchChange:(params:handleSearchChangeParams)=>void, 
-    langData:Array<LangCardType>, 
-    options: Array<OptionsType>, 
-    selectedValue: string
+export interface SearcherViewProps {
+  handleSearchClick: () => void;
+  handleSearchChange: (params: HandleSearchChangeParams) => void;
+  langData: Array<LangCardType>;
+  options: Array<OptionsType>;
+  selectedValue: string;
 }

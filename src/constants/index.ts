@@ -9,5 +9,5 @@ export const MOBILE_PARAM = "mobile";
 export const URL_PARAMS = {
   [FRONTEND]: FRONTEND_PARAM,
   [BACKEND]: BACKEND_PARAM,
-  [MOBILE]: MOBILE_PARAM
+  [MOBILE]: MOBILE_PARAM,
 };

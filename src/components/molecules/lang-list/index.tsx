@@ -1,21 +1,21 @@
-import React, { memo } from 'react'
-import { LangCard } from '../lang-card'
-import './lang-list.css'
+import React, { memo } from "react";
+import { LangCard } from "../lang-card";
+import "./lang-list.css";
 
 export interface LangCardType {
-    name:string, 
-    year:number, 
-    projectsCount:number, 
-    docs:string, 
-    logo:string
+    name: string;
+    year: number;
+    projectsCount: number;
+    docs: string;
+    logo: string;
 }
 
 interface LangListType {
-    langData:Array<LangCardType>
+    langData: Array<LangCardType>;
 }
 
 export const LangList = memo<LangListType>(({ langData }) => (
-    <div className='list-container'>
+    <div className="list-container">
         {
             langData.map(({name, year, projectsCount, docs, logo}, index) => (
                 <LangCard
@@ -29,4 +29,4 @@ export const LangList = memo<LangListType>(({ langData }) => (
             ))
         }
     </div>
-))
+));

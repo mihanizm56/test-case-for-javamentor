@@ -26,5 +26,5 @@ export const LangCard = memo<LangCardType>(
         </a>
       </div>
     </div>
-  )
+  ),
 );
