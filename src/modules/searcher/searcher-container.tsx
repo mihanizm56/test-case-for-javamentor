@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { LangCardType } from "../../components/molecules";
 import { fetchLangData, getLangData } from "../../redux/modules/lang-data";
 import { listOptions as options } from "./constants";
-import { handleSearchChangeParams, SearcherViewProps } from "./types";
+import { HandleSearchChangeParams, SearcherViewProps } from "./types";
 
 interface SearcherContainerPropsType {
   fetchLangData: (value: string) => void;
@@ -27,7 +27,7 @@ class WrappedContainer extends React.Component<
 
   public handleSearchChange = ({
     target: { value }
-  }: handleSearchChangeParams) => this.setState({ selectedValue: value });
+  }: HandleSearchChangeParams) => this.setState({ selectedValue: value });
 
   public render = () => {
     const { selectedValue } = this.state;

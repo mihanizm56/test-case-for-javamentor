@@ -28,10 +28,9 @@
     "start": "react-scripts start",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
     "build": "react-scripts build",
-    "test:precommit": "set CI=true&& npm run test",
+    "check": "set CI=true&& npm run test && npm run lint",
     "test:coverage": "react-scripts test --coverage",
     "precommit": "lint-staged",
-    "flow": "flow",
     "test": "react-scripts test --env=jsdom"
   },
   "browserslist": {
