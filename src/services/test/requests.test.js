@@ -18,27 +18,50 @@ describe("test fetchLangRequest", () => {
   it("test request without params", () => {
     fetchLangRequest();
     expect(global.fetch).toHaveBeenCalledTimes(1);
-    expect(global.fetch).toHaveBeenCalledWith(getLangEndpoint);
+    expect(global.fetch).toHaveBeenCalledWith(getLangEndpoint, {
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    });
   });
   it("test request with param 'Front-end'", () => {
     fetchLangRequest(FRONTEND);
     expect(global.fetch).toHaveBeenCalledTimes(1);
     expect(global.fetch).toHaveBeenCalledWith(
-      `${getLangEndpoint}?group=frontend`
+      `${getLangEndpoint}?group=frontend`,
+      {
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }
     );
   });
   it("test request with param 'Back-end'", () => {
     fetchLangRequest(BACKEND);
     expect(global.fetch).toHaveBeenCalledTimes(1);
     expect(global.fetch).toHaveBeenCalledWith(
-      `${getLangEndpoint}?group=backend`
+      `${getLangEndpoint}?group=backend`,
+      {
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }
     );
   });
   it("test request with param 'Mobile'", () => {
     fetchLangRequest(MOBILE);
     expect(global.fetch).toHaveBeenCalledTimes(1);
     expect(global.fetch).toHaveBeenCalledWith(
-      `${getLangEndpoint}?group=mobile`
+      `${getLangEndpoint}?group=mobile`,
+      {
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }
     );
   });
 });
