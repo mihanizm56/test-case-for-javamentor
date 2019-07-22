@@ -1,1 +1,1 @@
-export const getRequest = ({ endpoint }) => fetch(endpoint)
+export const getRequest = ({ endpoint }) => fetch(endpoint);
