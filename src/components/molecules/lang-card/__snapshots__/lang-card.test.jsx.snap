@@ -5,7 +5,7 @@ exports[`test LangCard test render contract renders html-content 1`] = `
   className="card-container"
 >
   <div
-    className="card-first-line"
+    className="card-first-block"
   >
     <img
       alt="logo"
@@ -15,7 +15,7 @@ exports[`test LangCard test render contract renders html-content 1`] = `
     />
   </div>
   <div
-    className="card-second-line"
+    className="card-second-block"
   >
     <span
       className="card__lang-name"
